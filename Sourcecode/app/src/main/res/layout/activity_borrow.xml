@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Borrow"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/imagehead"
+        android:layout_width="384dp"
+        android:layout_height="50dp"
+        android:background="#10C7B5"
+        android:contentDescription="@string/backgroundhead" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginTop="11dp"
+        android:text="@string/Borrow"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:text="Borrow" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        tools:context="com.demotxt.myapp.recyclerview.Borrow">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_id"
+            android:layout_width="match_parent"
+            android:layout_height="382dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="63dp"
+        app:srcCompat="@drawable/line"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="438dp" />
+
+    <ImageButton
+        android:id="@+id/idBuLend"
+        android:layout_width="45dp"
+        android:layout_height="37dp"
+        android:layout_alignBottom="@+id/idBuProfil"
+        android:layout_marginLeft="60dp"
+        app:srcCompat="@drawable/bulend2" />
+
+    <ImageButton
+        android:id="@+id/idBuProfil"
+        android:layout_width="36dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        app:srcCompat="@drawable/buprofil2" />
+
+    <ImageView
+        android:id="@+id/idBuBorrow"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignTop="@+id/idBuLend"
+        android:layout_marginLeft="280dp"
+        app:srcCompat="@drawable/buborrow" />
+</RelativeLayout>

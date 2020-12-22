@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Rak Buku</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="nama">Nama</string>
+
+    <string name="no_id_card">No ID Card</string>
+    <string name="no_hp">No HP</string>
+
+    <string name="SignUp">SignUp</string>
+    <string name="email">Email</string>
+
+    <string name="sign_in">Sign In</string>
+    <string name="password">Password</string>
+    <string name="sign_up_sekarang">Sign Up Sekarang!</string>
+    <string name="baru_di_rak_buku">Baru di Rak Buku ?</string>
+    <string name="todo16">TODO</string>
+    <string name="todo17">TODO</string>
+    <string name="backgroundsignup">background</string>
+    <string name="backgroundputih">todo</string>
+    <string name="backgroundhead">TODO</string>
+    <string name="imagebutton">idUpload</string>
+    <string name="Profil">Profil</string>
+    <string name="Borrow">Borrow</string>
+    <string name="Lend">Lend</string>
+    <string name="nama_panjang">Nama Panjang</string>
+    <string name="email_gmail_com">email@gmail.com</string>
+
+
+</resources>

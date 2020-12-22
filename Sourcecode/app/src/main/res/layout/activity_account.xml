@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Account"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#10C7B5" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_marginLeft="18dp"
+        android:text="@string/Profil"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:text="Profile" />
+
+    <ImageView
+        android:id="@+id/idFoto"
+        android:layout_width="395dp"
+        android:layout_height="212dp"
+
+        android:layout_below="@+id/imageView3"
+        android:background="@drawable/back2"
+        tools:layout_editor_absoluteY="50dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="138dp"
+        android:layout_height="167dp"
+        android:layout_above="@+id/idDisplayNama"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/profil"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="2dp"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="50dp" />
+
+
+    <TextView
+        android:id="@+id/idDisplayNama"
+        android:layout_width="164dp"
+        android:layout_height="38dp"
+        android:layout_alignBottom="@+id/idFoto"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Nama Panjang"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="216dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_below="@+id/idFoto"
+        app:srcCompat="@drawable/statistik"
+        tools:layout_editor_absoluteY="262dp" />
+
+    <TextView
+        android:id="@+id/idEmailSignUp"
+        android:layout_width="156dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/imageView10"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="email@gmail.com"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="345dp" />
+
+    <TextView
+        android:id="@+id/idLokasiAkun"
+        android:layout_width="119dp"
+        android:layout_height="18dp"
+
+        android:layout_below="@+id/idEmailSignUp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Yogyakarta, DIY"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="345dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="312dp"
+        android:layout_height="63dp"
+        android:layout_below="@+id/imageView5"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/ratebig"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="386dp" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView6"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/line"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="438dp" />
+
+    <ImageButton
+        android:id="@+id/idBuLend"
+        android:layout_width="38dp"
+        android:layout_height="37dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
+        app:srcCompat="@drawable/bulend2" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="36dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/buprofil" />
+
+    <ImageButton
+        android:id="@+id/idBuBorrow"
+        android:layout_width="37dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/idBuLend"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginStart="280dp"
+        app:srcCompat="@drawable/buborrow2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="320dp"
+        app:srcCompat="@drawable/notification_bell" />
+
+</RelativeLayout>

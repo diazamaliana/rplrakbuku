@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lend"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="384dp"
+        android:layout_height="387dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/back"
+        android:contentDescription="@string/backgroundsignup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageputih"
+        android:layout_width="match_parent"
+        android:layout_height="299dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="75dp"
+        android:background="#ffffff"
+        android:contentDescription="@string/backgroundputih"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:background="#10C7B5" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/Lend"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:text="Lend" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/idBuProfil"
+        android:layout_alignParentStart="true"
+        app:srcCompat="@drawable/line"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="438dp" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView6"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/line"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="438dp" />
+
+    <ImageView
+        android:id="@+id/idBuLend"
+        android:layout_width="38dp"
+        android:layout_height="37dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
+        app:srcCompat="@drawable/bulend" />
+
+    <ImageButton
+        android:id="@+id/idBuProfil"
+        android:layout_width="43dp"
+        android:layout_height="47dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/buprofil3" />
+
+    <ImageButton
+        android:id="@+id/idBuBorrow"
+        android:layout_width="37dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/idBuLend"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginStart="280dp"
+        app:srcCompat="@drawable/buborrow2" />
+
+    <EditText
+        android:id="@+id/idJudulLend"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="83dp"
+        android:ems="10"
+        android:hint="Judul Buku"
+        android:inputType="text|textLongMessage"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/idPenulisLend"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <EditText
+        android:id="@+id/idPenulisLend"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idJudulLend"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Penulis"
+        android:inputType="text|textLongMessage"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/idPenerbitLend"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idJudulLend" />
+
+    <EditText
+        android:id="@+id/idPenerbitLend"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idPenulisLend"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Penerbit"
+        android:inputType="text|textLongMessage"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idPenulisLend" />
+
+
+    <EditText
+        android:id="@+id/idTipeLend"
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/idJudulLend"
+        android:layout_below="@+id/idPenerbitLend"
+        android:baselineAligned="true"
+        android:ems="10"
+        android:hint="Genre"
+        android:inputType="text|textLongMessage"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/KotaLender"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cityreleaseTxt"
+        app:layout_constraintVertical_bias="0.101" />
+
+    <EditText
+        android:id="@+id/idEmailLender"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idTipeLend"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Email Lender"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="337dp" />
+
+    <EditText
+        android:id="@+id/idHargaLend"
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/idJudulLend"
+        android:layout_below="@+id/idEmailLender"
+        android:ems="10"
+        android:hint="Harga Sewa"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="282dp" />
+
+    <EditText
+        android:id="@+id/KotaLender"
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/idJudulLend"
+        android:layout_below="@+id/idPenerbitLend"
+        android:ems="10"
+        android:hint="Kota Lender"
+        android:inputType="text|textLongMessage"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="282dp" />
+
+    <ImageButton
+        android:id="@+id/UploadBook"
+        android:layout_width="171dp"
+        android:layout_height="48dp"
+        android:layout_alignEnd="@+id/idJudulLend"
+        android:layout_below="@+id/idEmailLender"
+        android:adjustViewBounds="false"
+        android:background="@drawable/buuploadwith"
+        android:tint="@android:color/background_light"
+        android:visibility="visible"
+        app:srcCompat="@android:drawable/ic_menu_upload" />
+
+    <Button
+        android:id="@+id/LendBtn"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="77dp"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="lend"
+        android:text="Lend"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/TextUrlBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toEndOf="@+id/idBuProfil"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

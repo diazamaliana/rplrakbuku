@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BorrowDeskripsiBuku"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/imagehead"
+        android:layout_width="384dp"
+        android:layout_height="50dp"
+        android:background="#10C7B5"
+        android:contentDescription="@string/backgroundhead" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/Borrow"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:text="Borrow" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        tools:context=".Account">
+
+        <TextView
+            android:id="@+id/TextJudulBuku"
+            android:layout_width="168dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/TextPenerbitBuku"
+            android:layout_marginTop="42dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextPenulisBuku"
+            android:layout_width="169dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextJudulBuku"
+            android:layout_marginLeft="180dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/TextPenerbitBuku"
+            android:layout_width="169dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignStart="@+id/TextPenulisBuku"
+            android:layout_below="@+id/TextPenulisBuku"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/TextTipeBuku"
+            android:layout_width="169dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignStart="@+id/TextPenulisBuku"
+            android:layout_below="@+id/TextPenerbitBuku"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/TextHargaBuku"
+            android:layout_width="169dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignStart="@+id/TextPenulisBuku"
+            android:layout_below="@+id/TextTipeBuku"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/NamaPemilik"
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+
+            android:layout_above="@+id/EmailPemilik"
+            android:layout_alignStart="@+id/EmailPemilik"
+            android:layout_marginBottom="-300dp"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+        android:id="@+id/EmailPemilik"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="142dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="300dp"
+        android:gravity="center"
+        android:text="TextView" />
+
+        <TextView
+            android:id="@+id/DomisiliPemilik"
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/EmailPemilik"
+            android:layout_below="@+id/EmailPemilik"
+            android:layout_marginTop="-142dp"
+            android:gravity="center"
+            android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="189dp"
+            android:layout_height="22dp"
+            android:layout_alignParentBottom="true"
+
+            android:layout_alignStart="@+id/EmailPemilik"
+            android:layout_marginBottom="90dp"
+            app:srcCompat="@drawable/rate2" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/idFotoDeskBuku"
+            android:layout_width="138dp"
+            android:layout_height="182dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/profil"
+            app:civ_border_color="#FFFFFF"
+            app:civ_border_width="2dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/idFotoPemilik"
+            android:layout_width="138dp"
+            android:layout_height="163dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="79dp"
+            android:layout_marginEnd="17dp"
+            android:src="@drawable/profil"
+            app:civ_border_color="#FFFFFF"
+            app:civ_border_width="2dp"
+            tools:layout_editor_absoluteX="123dp"
+            tools:layout_editor_absoluteY="50dp" />
+
+        <Button
+            android:id="@+id/idFixBorrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/idFotoDeskBuku"
+            android:layout_centerHorizontal="true"
+
+            android:background="#05ada1"
+            android:text="Pinjam"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextLenderView"
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/TextJudulBuku"
+            android:layout_alignTop="@+id/imageView10"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:text="Lender"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="87dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/TextJudulBuku"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="-42dp"
+            android:layout_marginStart="34dp"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:text="Buku"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="63dp"
+        app:srcCompat="@drawable/line"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="438dp" />
+
+    <ImageButton
+        android:id="@+id/idBuLend"
+        android:layout_width="46dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="60dp"
+        app:srcCompat="@drawable/bulend2" />
+
+    <ImageButton
+        android:id="@+id/idBuProfil"
+        android:layout_width="36dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        app:srcCompat="@drawable/buprofil2" />
+
+    <ImageView
+        android:id="@+id/idBuBorrow"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/idBuLend"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="7dp"
+        app:srcCompat="@drawable/buborrow" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="61dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginTop="191dp"
+
+        app:srcCompat="@color/colorPrimary" />
+</RelativeLayout>

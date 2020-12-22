@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    tools:layout_editor_absoluteY="81dp">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="384dp"
+            android:layout_height="459dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="52dp"
+            android:background="@drawable/back"
+            android:contentDescription="@string/backgroundsignup" />
+
+        <ImageView
+            android:id="@+id/imageputih"
+            android:layout_width="match_parent"
+            android:layout_height="316dp"
+            android:layout_centerVertical="true"
+            android:background="#ffffff"
+            android:contentDescription="@string/backgroundputih"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imagehead"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="71dp"
+            android:background="#10C7B5"
+            android:contentDescription="@string/backgroundhead"
+            app:layout_constraintBottom_toTopOf="@+id/idNama"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.994"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/idNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/idEmailSignUp"
+            android:layout_alignParentStart="true"
+            android:ems="10"
+            android:hint="@string/nama"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/idNoID"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagehead" />
+
+        <EditText
+            android:id="@+id/idEmailSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_above="@+id/idNoID"
+            android:layout_alignParentStart="true"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idNama" />
+
+        <EditText
+            android:id="@+id/idNoID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_above="@+id/idLokasiAkun"
+            android:layout_alignParentStart="true"
+            android:ems="10"
+            android:hint="@string/no_id_card"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/idPassSignUp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idNama" />
+
+        <EditText
+            android:id="@+id/idLokasiAkun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_above="@+id/idPassSignUp"
+            android:layout_alignParentStart="true"
+            android:ems="10"
+            android:hint="Domisili"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idNoID" />
+
+        <EditText
+            android:id="@+id/idPassSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/idUpload"
+            android:layout_alignParentStart="true"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toTopOf="@+id/idUpload"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idNoID" />
+
+        <Button
+            android:id="@+id/idSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="56dp"
+            android:background="#05ada1"
+            android:onClick="signup"
+            android:text="Sign Up"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idUpload"
+            tools:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/idUpload"
+            android:layout_width="202dp"
+            android:layout_height="52dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="127dp"
+            android:contentDescription="@string/imagebutton"
+            app:layout_constraintBottom_toTopOf="@+id/idSignUp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idPassSignUp"
+            app:srcCompat="@drawable/buuploadwith" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentTop="true"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"
+            android:text="@string/sign_up"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imagehead" />
+
+        <TextView
+            android:id="@+id/myUri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="TextView"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="67dp" />
+
+</RelativeLayout>
